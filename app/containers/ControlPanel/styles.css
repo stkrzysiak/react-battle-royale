@@ -1,0 +1,23 @@
+.sliderWrapper {
+  margin: 5px 0;
+  display: flex;
+}
+
+.dataPointsWrapper,
+.seriesWrapper {
+  padding: 0 10px;
+  display: flex;
+}
+
+.slider {
+  margin: 0 50px;
+  flex-grow: 1;
+}
+
+.seriesCopy {
+  margin: 0 10px;
+}
+
+.controlPanelWrapper {
+  display: flex;
+}
