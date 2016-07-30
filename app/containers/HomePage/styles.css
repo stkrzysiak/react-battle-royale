@@ -1,3 +1,28 @@
 .wrapper {
   margin-top: 5px;
 }
+
+.logo {
+  font-size: 2em;
+}
+
+.menu {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height:40px;
+  background-color: rgb(0, 188, 212);
+}
+.menuItem {
+  border-left: 1px dotted grey;
+  border-right: 1px dotted grey;
+  flex:1;
+  text-align: center;
+
+}
+.menuItem .first {
+  border-left: none;
+}
+.menuItem .last {
+  border-right: none;
+}

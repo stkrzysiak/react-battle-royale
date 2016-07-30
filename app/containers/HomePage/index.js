@@ -20,13 +20,18 @@ import MultiBarChartHighCharts from '../../components/MultiBarChartHighCharts';
 import randomDataSelector from './randomDataSelector';
 import ControlPanel from '../ControlPanel';
 import selectHomePage from './selector';
-const colors = ['#69D2E7', '#A7DBD8', '#E0E4CC', '#F38630', '#FA6900'];
-
+import { COLORS } from './constants';
 
 const HomePage = ({ ui, data }) => {
   const { width, height } = ui;
+  const colors = COLORS.adriftInDreams;
   return (
     <div className={styles.wrapper}>
+      <div className={styles.logo}>React. Battle. Royale.</div>
+      <Tabs>
+        <Tab label='Charts' />
+        <Tab label='Grids' />
+      </Tabs>
       <ControlPanel />
       <Tabs>
 
