@@ -12,7 +12,9 @@ import React from 'react';
 // Import the CSS reset, which HtmlWebpackPlugin transfers to the build folder
 import 'sanitize.css/sanitize.css';
 
+import Header from 'components/Header';
 import Footer from 'components/Footer';
+import MainMenu from 'components/MainMenu';
 
 import styles from './styles.css';
 
@@ -23,6 +25,8 @@ function App(props) {
   return (
     <MuiThemeProvider>
       <div className={styles.wrapper}>
+        <Header />
+        <MainMenu />
         {props.children}
         <Footer />
       </div>

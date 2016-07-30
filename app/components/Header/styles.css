@@ -1,0 +1,18 @@
+.header {
+
+}
+.textSection {
+  margin: 3em auto;
+}
+
+.textSection:first-child {
+  margin-top: 0;
+}
+
+.centered {
+  text-align: center;
+}
+
+.logo {
+  font-size: 2em;
+}

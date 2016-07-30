@@ -34,6 +34,22 @@ export default function createRoutes() {
         importModules.catch(errorLoading);
       },
     }, {
+      path: '/faqs',
+      name: 'faqs',
+      getComponent(nextState, cb) {
+        System.import('containers/FaqPage')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
+      path: '/components',
+      name: 'components',
+      getComponent(nextState, cb) {
+        System.import('containers/ComponentPage')
+          .then(loadModule(cb))
+          .catch(errorLoading);
+      },
+    }, {
       path: '*',
       name: 'notfound',
       getComponent(nextState, cb) {

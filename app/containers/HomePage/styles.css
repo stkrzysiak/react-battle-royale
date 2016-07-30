@@ -2,10 +2,6 @@
   margin-top: 5px;
 }
 
-.logo {
-  font-size: 2em;
-}
-
 .menu {
   display:flex;
   align-items: center;

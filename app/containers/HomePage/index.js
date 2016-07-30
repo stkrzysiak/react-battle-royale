@@ -2,49 +2,32 @@
  * HomePage
  *
  * This is the first thing users see of our App, at the '/' route
- *
- * NOTE: while this component should technically be a stateless functional
- * component (SFC), hot reloading does not currently support SFCs. If hot
- * reloading is not a neccessity for you then you can refactor it and remove
- * the linting exception.
  */
-import styles from './styles.css';
 
 import React from 'react';
-import { createStructuredSelector } from 'reselect';
-import { connect } from 'react-redux';
-import { Tabs, Tab } from 'material-ui/Tabs';
-
-import randomDataSelector from './randomDataSelector';
-import ControlPanel from '../ControlPanel';
-import Charts from '../Charts';
-
-import selectHomePage from './selector';
-
-const HomePage = ({ ui, data }) => (
-  <div className={styles.wrapper}>
-    <div className={styles.logo}>React. Battle. Royale.</div>
-    <Tabs>
-      <Tab label="Charts" />
-      <Tab label="Grids" />
-    </Tabs>
-    <ControlPanel />
-    <Charts ui={ui} data={data} />
-  </div>
-);
 
 
-const mapStateToProps = createStructuredSelector({
-  data: randomDataSelector(),
-  ui: selectHomePage(),
-});
+import styles from './styles.css';
 
-HomePage.propTypes = {
-  ui: React.PropTypes.shape({
-    width: React.PropTypes.number,
-    height: React.PropTypes.number,
-  }),
-  data: React.PropTypes.array,
-};
+function HomePage() {
+  return (
+    <article>
+      <div>
+        <section className={styles.textSection}>
+        Etiam viverra erat in tincidunt viverra. Nulla ultrices suscipit enim hendrerit rutrum.
+        In hac habitasse platea dictumst. Integer aliquet ut nunc in vulputate. Vestibulum ante
+        ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus
+        tincidunt ipsum sed massa dictum, eu varius dui laoreet. Fusce a auctor lectus, vel
+        tempus neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+        cubilia Curae; Sed condimentum turpis nec nunc auctor, a mollis eros ultricies. Curabitur
+        blandit viverra velit, ac mattis mi imperdiet quis. Duis eu sodales ipsum. Fusce orci dolor,
+        tempus sed lorem non, consectetur egestas metus. Vivamus lorem nisl, congue maximus consectetur ut,
+        efficitur nec mi. Nunc ac lectus sit amet ligula accumsan semper.
+        </section>
+      </div>
+    </article>
+  );
+}
 
-export default connect(mapStateToProps)(HomePage);
+// Wrap the component to inject dispatch and state into it
+export default HomePage;

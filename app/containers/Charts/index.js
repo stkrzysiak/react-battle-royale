@@ -19,7 +19,6 @@ const colors = COLORS.adriftInDreams;
 export class Charts extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
   render() {
-    debugger;
     const { width, height } = this.props.ui;
     const { data } = this.props;
 
