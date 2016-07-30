@@ -6,13 +6,38 @@
 
 import React from 'react';
 import { connect } from 'react-redux';
+import { Tabs, Tab } from 'material-ui/Tabs';
+import { COLORS } from './constants';
 import styles from './styles.css';
 
+import MultiBarChartNvd3 from '../../components/MultiBarChartNvd3';
+import MultiBarChartC3 from '../../components/MultiBarChartC3';
+import MultiBarChartHighCharts from '../../components/MultiBarChartHighCharts';
+
+const colors = COLORS.adriftInDreams;
+
 export class Charts extends React.Component { // eslint-disable-line react/prefer-stateless-function
+
   render() {
+    debugger;
+    const { width, height } = this.props.ui;
+    const { data } = this.props;
+
     return (
       <div className={styles.charts}>
-      This is Charts container !
+        <Tabs>
+
+          <Tab label="C3">
+            <MultiBarChartC3 data={data} colors={colors} width={width} height={height} />
+          </Tab>
+          <Tab label="HighCharts">
+            <MultiBarChartHighCharts data={data} colors={colors} width={width} height={height} />
+          </Tab>
+          <Tab label="NVD3">
+            <MultiBarChartNvd3 data={data} colors={colors} width={width} height={height} />
+          </Tab>
+
+        </Tabs>
       </div>
     );
   }
@@ -25,4 +50,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(mapDispatchToProps)(Charts);
+export default connect()(Charts);

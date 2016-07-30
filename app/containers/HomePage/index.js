@@ -14,41 +14,24 @@ import React from 'react';
 import { createStructuredSelector } from 'reselect';
 import { connect } from 'react-redux';
 import { Tabs, Tab } from 'material-ui/Tabs';
-import MultiBarChartNvd3 from '../../components/MultiBarChartNvd3';
-import MultiBarChartC3 from '../../components/MultiBarChartC3';
-import MultiBarChartHighCharts from '../../components/MultiBarChartHighCharts';
+
 import randomDataSelector from './randomDataSelector';
 import ControlPanel from '../ControlPanel';
+import Charts from '../Charts';
+
 import selectHomePage from './selector';
-import { COLORS } from './constants';
 
-const HomePage = ({ ui, data }) => {
-  const { width, height } = ui;
-  const colors = COLORS.adriftInDreams;
-  return (
-    <div className={styles.wrapper}>
-      <div className={styles.logo}>React. Battle. Royale.</div>
-      <Tabs>
-        <Tab label='Charts' />
-        <Tab label='Grids' />
-      </Tabs>
-      <ControlPanel />
-      <Tabs>
-
-        <Tab label="C3">
-          <MultiBarChartC3 data={data} colors={colors} width={width} height={height} />
-        </Tab>
-        <Tab label="HighCharts">
-          <MultiBarChartHighCharts data={data} colors={colors} width={width} height={height} />
-        </Tab>
-        <Tab label="NVD3">
-          <MultiBarChartNvd3 data={data} colors={colors} width={width} height={height} />
-        </Tab>
-
-      </Tabs>
-    </div>
-  );
-};
+const HomePage = ({ ui, data }) => (
+  <div className={styles.wrapper}>
+    <div className={styles.logo}>React. Battle. Royale.</div>
+    <Tabs>
+      <Tab label="Charts" />
+      <Tab label="Grids" />
+    </Tabs>
+    <ControlPanel />
+    <Charts ui={ui} data={data} />
+  </div>
+);
 
 
 const mapStateToProps = createStructuredSelector({
