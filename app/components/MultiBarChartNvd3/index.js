@@ -4,6 +4,7 @@
 
 import React from 'react';
 import NVD3Chart from 'react-nvd3';
+import styles from './styles.css';
 
 function getDatum(data, colors) {
   const datum = [];
