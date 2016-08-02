@@ -33,10 +33,17 @@ export class MainMenu extends React.Component {
   openFaqsPage = () => {
     this.openRoute('/faqs');
   };
+  /**
+   * Changed route to '/'
+   */
+  openHomePage = () => {
+    this.openRoute('/');
+  };
   render() {
     return (
       <div>
         <Tabs>
+          <Tab label="Home" onClick={this.openHomePage} />
           <Tab label="Components" onClick={this.openComponentsPage} />
           <Tab label="FAQs" onClick={this.openFaqsPage} />
         </Tabs>

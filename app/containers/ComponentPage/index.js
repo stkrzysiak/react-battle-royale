@@ -14,13 +14,17 @@ import Charts from '../Charts';
 import ControlPanel from '../ControlPanel';
 import randomDataSelector from './randomDataSelector';
 
+const tabStyles = {
+  marginTop: '13px',
+};
+
 export class Components extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     const { ui, data } = this.props;
 
     return (
       <div>
-        <Tabs>
+        <Tabs style={tabStyles}>
           <Tab label="Charts" />
           <Tab label="Grids" />
         </Tabs>

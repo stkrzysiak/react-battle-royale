@@ -16,6 +16,10 @@ import MultiBarChartHighCharts from '../../components/MultiBarChartHighCharts';
 
 const colors = COLORS.adriftInDreams;
 
+const tabStyles = {
+  marginTop: '13px',
+};
+
 export class Charts extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
   render() {
@@ -24,7 +28,7 @@ export class Charts extends React.Component { // eslint-disable-line react/prefe
 
     return (
       <div className={styles.charts}>
-        <Tabs>
+        <Tabs style={tabStyles}>
 
           <Tab label="C3">
             <MultiBarChartC3 data={data} colors={colors} width={width} height={height} />
