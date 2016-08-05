@@ -10,7 +10,7 @@
 import React from 'react';
 
 import Chart from 'react-c3-component';
-// import 'c3/c3.css';
+import 'c3/c3.css';
 
 function getDatum(data) {
   const formattedSeries = [];
@@ -59,6 +59,11 @@ const MultiBarChartC3 = ({ data, colors, width, height }) =>
         x: {
           type: 'category',
           categories: getXAxis(data),
+        },
+      },
+      grid: {
+        y: {
+          show: true,
         },
       },
     }}
