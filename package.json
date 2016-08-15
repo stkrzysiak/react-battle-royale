@@ -109,7 +109,7 @@
     "highcharts": "4.2.5",
     "history": "3.0.0",
     "immutable": "3.8.1",
-    "material-ui": "0.15.3",
+    "material-ui": "0.15.4",
     "node-github": "0.0.3",
     "react": "15.3.0",
     "react-addons-shallow-compare": "15.3.0",
