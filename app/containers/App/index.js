@@ -6,19 +6,18 @@
  * contain code that should be seen on all pages. (e.g. navigation bar)
  */
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-
+import injectTapEventPlugin from 'react-tap-event-plugin';
 import React from 'react';
 
 // Import the CSS reset, which HtmlWebpackPlugin transfers to the build folder
 import 'sanitize.css/sanitize.css';
-
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import MainMenu from 'components/MainMenu';
 
 import styles from './styles.css';
 
-import injectTapEventPlugin from 'react-tap-event-plugin';
+
 injectTapEventPlugin(); // for the tabs
 
 function App(props) {

@@ -4,7 +4,7 @@
  *
  */
 
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { Tabs, Tab } from 'material-ui/Tabs';
 import { COLORS } from './constants';
@@ -46,11 +46,12 @@ export class Charts extends React.Component { // eslint-disable-line react/prefe
   }
 }
 
-
-function mapDispatchToProps(dispatch) {
-  return {
-    dispatch,
-  };
-}
+Charts.propTypes = {
+  ui: PropTypes.shape({
+    width: PropTypes.number,
+    height: PropTypes.number,
+  }),
+  data: PropTypes.array,
+};
 
 export default connect()(Charts);

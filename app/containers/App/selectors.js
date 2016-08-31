@@ -15,6 +15,4 @@ const selectLocationState = () => {
   };
 };
 
-export {
-  selectLocationState,
-};
+export default selectLocationState;

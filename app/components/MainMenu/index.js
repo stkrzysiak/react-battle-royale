@@ -10,7 +10,7 @@ import { push } from 'react-router-redux';
 import { connect } from 'react-redux';
 
 
-export class MainMenu extends React.Component {
+export class MainMenuBase extends React.Component {
   /**
    * Changes the route
    *
@@ -52,7 +52,7 @@ export class MainMenu extends React.Component {
   }
 }
 
-MainMenu.propTypes = {
+MainMenuBase.propTypes = {
   changeRoute: React.PropTypes.func,
 
 };
@@ -66,4 +66,4 @@ function mapDispatchToProps(dispatch) {
 
 
 // Wrap the component to inject dispatch and state into it
-export default connect(null, mapDispatchToProps)(MainMenu);
+export default connect(null, mapDispatchToProps)(MainMenuBase);

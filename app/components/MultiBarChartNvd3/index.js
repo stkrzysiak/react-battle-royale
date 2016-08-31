@@ -4,7 +4,8 @@
 
 import React from 'react';
 import NVD3Chart from 'react-nvd3';
-import styles from './styles.css';
+// eslint-disable-next-line
+import styles from './styles.css';  // global css var for the gridlines
 
 function getDatum(data, colors) {
   const datum = [];
