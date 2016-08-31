@@ -8,7 +8,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import styles from './styles.css';
 
-export class FaqPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
+export class FaqPageBase extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
       <div className={styles.faqPage}>
@@ -25,4 +25,4 @@ function mapDispatchToProps(dispatch) {
   };
 }
 
-export default connect(mapDispatchToProps)(FaqPage);
+export default connect(mapDispatchToProps)(FaqPageBase);

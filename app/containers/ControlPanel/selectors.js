@@ -15,7 +15,6 @@ const selectControlPanel = () => createSelector(
   (substate) => substate.toJS()
 );
 
-export default selectControlPanel;
 export {
   selectControlPanelDomain,
   selectControlPanel,

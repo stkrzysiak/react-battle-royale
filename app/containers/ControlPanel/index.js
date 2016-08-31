@@ -3,16 +3,15 @@
  * ControlPanel
  *
  */
+import { blue500 } from 'material-ui/styles/colors';
 
-import React from 'react';
-import { connect } from 'react-redux';
-import selectControlPanel from './selectors';
-import styles from './styles.css';
 import Slider from 'material-ui/Slider';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 import ContentRemove from 'material-ui/svg-icons/content/remove';
-
-import { blue500 } from 'material-ui/styles/colors';
+import React from 'react';
+import { connect } from 'react-redux';
+import { selectControlPanel } from './selectors';
+import styles from './styles.css';
 
 import {
   adjustWidth,
@@ -21,7 +20,7 @@ import {
   updateSeriesCount,
 } from './actions';
 
-export class ControlPanel extends React.Component { // eslint-disable-line react/prefer-stateless-function
+export class ControlPanelBase extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     const { width, height, dataPoints, seriesCount } = this.props;
     return (
@@ -87,7 +86,7 @@ function mapDispatchToProps(dispatch) {
 }
 
 
-ControlPanel.propTypes = {
+ControlPanelBase.propTypes = {
   width: React.PropTypes.number,
   height: React.PropTypes.number,
   dataPoints: React.PropTypes.number,
@@ -98,4 +97,4 @@ ControlPanel.propTypes = {
   onSeriesClick: React.PropTypes.func,
 
 };
-export default connect(mapStateToProps, mapDispatchToProps)(ControlPanel);
+export default connect(mapStateToProps, mapDispatchToProps)(ControlPanelBase);
