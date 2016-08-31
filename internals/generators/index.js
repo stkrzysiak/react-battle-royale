@@ -5,9 +5,9 @@
  */
 
 const fs = require('fs');
-const componentGenerator = require('./component/index.js');
-const containerGenerator = require('./container/index.js');
-const routeGenerator = require('./route/index.js');
+const componentGenerator = require('./component/index');
+const containerGenerator = require('./container/index');
+const routeGenerator = require('./route/index');
 
 module.exports = (plop) => {
   plop.setGenerator('component', componentGenerator);
