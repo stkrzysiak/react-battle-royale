@@ -1,9 +1,12 @@
-import MainMenu from '../index';
-
 import expect from 'expect';
 import { shallow } from 'enzyme';
 import React from 'react';
 
-describe('<MainMenu />', () => {
+import { MainMenuBase } from '../index';
 
+describe('<MainMenu />', () => {
+  it('renders three <MainMenu /> component', () => {
+    const wrapper = shallow(<MainMenuBase />);
+    expect(wrapper.find(MainMenuBase)).to.have.length(1);
+  });
 });
