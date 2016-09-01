@@ -1,6 +1,7 @@
 import { createSelector } from 'reselect';
 import moment from 'moment';
 import Chance from 'chance';
+
 const chance = new Chance();
 const months = moment.months();
 

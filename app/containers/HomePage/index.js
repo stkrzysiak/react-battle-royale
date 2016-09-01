@@ -6,14 +6,11 @@
 
 import React from 'react';
 
-
-import styles from './styles.css';
-
 function HomePage() {
   return (
     <article>
       <div>
-        <section className={styles.textSection}>
+        <section>
         Etiam viverra erat in tincidunt viverra. Nulla ultrices suscipit enim hendrerit rutrum.
         In hac habitasse platea dictumst. Integer aliquet ut nunc in vulputate. Vestibulum ante
         ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus

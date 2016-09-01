@@ -8,7 +8,6 @@ import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import { Tabs, Tab } from 'material-ui/Tabs';
 import { COLORS } from './constants';
-import styles from './styles.css';
 
 import MultiBarChartNvd3 from '../../components/MultiBarChartNvd3';
 import MultiBarChartC3 from '../../components/MultiBarChartC3';
@@ -20,14 +19,14 @@ const tabStyles = {
   marginTop: '13px',
 };
 
-export class Charts extends React.Component { // eslint-disable-line react/prefer-stateless-function
+export class ChartsBase extends React.Component { // eslint-disable-line react/prefer-stateless-function
 
   render() {
     const { width, height } = this.props.ui;
     const { data } = this.props;
 
     return (
-      <div className={styles.charts}>
+      <div>
         <Tabs style={tabStyles}>
 
           <Tab label="C3">
@@ -46,7 +45,7 @@ export class Charts extends React.Component { // eslint-disable-line react/prefe
   }
 }
 
-Charts.propTypes = {
+ChartsBase.propTypes = {
   ui: PropTypes.shape({
     width: PropTypes.number,
     height: PropTypes.number,
@@ -54,4 +53,4 @@ Charts.propTypes = {
   data: PropTypes.array,
 };
 
-export default connect()(Charts);
+export default connect()(ChartsBase);

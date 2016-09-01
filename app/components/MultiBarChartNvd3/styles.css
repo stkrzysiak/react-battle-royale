@@ -1,5 +1,5 @@
 :global(.nvd3 .nv-y .nv-axis line) {
-    fill: none;
-    stroke: #e5e5e5;
-    shape-rendering: crispEdges;
+  fill: none;
+  stroke: #E5E5E5;
+  shape-rendering: crispEdges;
 }

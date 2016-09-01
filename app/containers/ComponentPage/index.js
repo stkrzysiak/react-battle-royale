@@ -7,9 +7,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-
-import selectComponentsPage from './selectors';
 import { Tabs, Tab } from 'material-ui/Tabs';
+import selectComponentsPage from './selectors';
 import Charts from '../Charts';
 import ControlPanel from '../ControlPanel';
 import randomDataSelector from './randomDataSelector';

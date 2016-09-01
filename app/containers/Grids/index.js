@@ -6,12 +6,11 @@
 
 import React from 'react';
 import { connect } from 'react-redux';
-import styles from './styles.css';
 
 export class GridsBase extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div className={styles.grids}>
+      <div>
       This is Grids container !
       </div>
     );
