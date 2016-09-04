@@ -139,7 +139,7 @@
     "babel-core": "6.14.0",
     "babel-eslint": "6.1.2",
     "babel-loader": "6.2.5",
-    "babel-plugin-react-intl": "2.1.4",
+    "babel-plugin-react-intl": "2.2.0",
     "babel-plugin-react-transform": "2.0.2",
     "babel-plugin-transform-react-constant-elements": "6.9.1",
     "babel-plugin-transform-react-inline-elements": "6.8.0",
