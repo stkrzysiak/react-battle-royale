@@ -5,8 +5,8 @@ import Header from '../index';
 
 
 describe('<Header />', () => {
-  it('renders three <Foo /> components', () => {
+  it('renders iself', () => {
     const wrapper = shallow(<Header />);
-    expect(wrapper.find(Header)).to.have.length(1);
+    expect(wrapper.hasClass('header')).toEqual(true);
   });
 });

@@ -8,7 +8,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { Tabs, Tab } from 'material-ui/Tabs';
-import selectComponentsPage from './selectors';
+import { selectComponentsDemos } from './selectors';
 import Charts from '../Charts';
 import ControlPanel from '../ControlPanel';
 import randomDataSelector from './randomDataSelector';
@@ -36,7 +36,7 @@ export class Components extends React.Component { // eslint-disable-line react/p
 
 const mapStateToProps = createStructuredSelector({
   data: randomDataSelector(),
-  ui: selectComponentsPage(),
+  ui: selectComponentsDemos(),
 });
 
 Components.propTypes = {

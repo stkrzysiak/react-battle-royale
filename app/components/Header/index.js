@@ -10,7 +10,7 @@ import styles from './styles.css';
 
 function Header() {
   return (
-    <div className={styles.header}>
+    <div className={'header'}>
       <article>
         <div>
           <section className={`${styles.logo} ${styles.centered}`}>

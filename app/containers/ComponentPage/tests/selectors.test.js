@@ -1,9 +1,9 @@
 import { fromJS } from 'immutable';
 import expect from 'expect';
-import { selectComponents } from '../selectors';
+import { selectComponentsDemos } from '../selectors';
 
 
-const selector = selectComponents();
+const selector = selectComponentsDemos();
 
 describe('selectComponents', () => {
   it('selector behaves as expected', () => {

@@ -20,7 +20,7 @@ const selectComponentsDemos = () => createSelector(
   (substate) => substate.toJS()
 );
 
-export default selectComponentsDemos;
 export {
+  selectComponentsDemos,
   selectComponentsDemosDomain,
 };
