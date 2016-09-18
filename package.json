@@ -116,7 +116,7 @@
     "file-loader": "0.9.0",
     "fontfaceobserver": "2.0.4",
     "highcharts": "4.2.6",
-    "history": "3.2.1",
+    "history": "4.1.0",
     "immutable": "3.8.1",
     "material-ui": "0.15.4",
     "moment": "2.14.1",
