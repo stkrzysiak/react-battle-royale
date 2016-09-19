@@ -17,7 +17,7 @@ const selectComponentsDemosDomain = () => state => state.get('controlPanel');
 
 const selectComponentsDemos = () => createSelector(
   selectComponentsDemosDomain(),
-  (substate) => substate.toJS()
+  substate => substate.toJS()
 );
 
 export {

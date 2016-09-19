@@ -15,7 +15,7 @@ import {
 const initialState = fromJS({ width: 600, height: 800, dataPoints: 12, seriesCount: 3 });
 const updateIntegerProperty = (property, state, direction) => {
   let tmp = state.get(property);
-  tmp = direction === 'up' ? ++tmp : --tmp;
+  tmp = direction === 'up' ? tmp += 1 : tmp -= 1;
   return state.set(property, tmp);
 };
 

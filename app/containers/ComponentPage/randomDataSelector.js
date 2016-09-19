@@ -10,7 +10,7 @@ export const adjustMonths = (dataPoints) => {
     return months.slice(0, dataPoints);
   } else if (dataPoints > 12) {
     const adjustedMonths = [];
-    for (let i = 0; i < dataPoints; i++) {
+    for (let i = 0; i < dataPoints; i += 1) {
       adjustedMonths.push(moment.months(i));
     }
     return adjustedMonths;
@@ -23,7 +23,7 @@ export const generateBarChartData = (dataPoints, seriesCount) => {
   const totalMonths = adjustMonths(dataPoints);
   const randomMonth = month => ({ x: month, y: chance.integer({ min: 100, max: 1000 }) });
 
-  for (let i = 0; i < seriesCount; i++) {
+  for (let i = 0; i < seriesCount; i += 1) {
     series.push(totalMonths.map(month => randomMonth(month)));
   }
 
@@ -31,7 +31,7 @@ export const generateBarChartData = (dataPoints, seriesCount) => {
 };
 
 
-const selectDataRanges = () => state => {
+const selectDataRanges = () => (state) => {
   const { seriesCount, dataPoints } = state.get('controlPanel').toJS();
   return { seriesCount, dataPoints };
 };
@@ -42,7 +42,7 @@ const selectDataRanges = () => state => {
 
 const randomDataSelector = () => createSelector(
   selectDataRanges(),
-  (ranges) => generateBarChartData(ranges.dataPoints, ranges.seriesCount)
+  ranges => generateBarChartData(ranges.dataPoints, ranges.seriesCount)
 );
 
 export default randomDataSelector;

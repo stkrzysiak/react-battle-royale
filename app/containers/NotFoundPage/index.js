@@ -11,11 +11,7 @@
 
 import React from 'react';
 
-export default class NotFound extends React.Component { // eslint-disable-line react/prefer-stateless-function
+const NotFoundPage = () =>
+  <div>This is FaqPage container !</div>;
 
-  render() {
-    return (
-      <h1>Page Not Found</h1>
-    );
-  }
-}
+export default NotFoundPage;

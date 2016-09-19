@@ -8,6 +8,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 export class GridsBase extends React.Component { // eslint-disable-line react/prefer-stateless-function
+  // eslint-disable-next-line
   render() {
     return (
       <div>

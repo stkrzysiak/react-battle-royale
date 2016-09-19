@@ -16,26 +16,19 @@ function getDatum(data) {
   const formattedSeries = [];
   const arrayLength = data.length;
 
-  for (let i = 0; i < arrayLength; i++) {
+  for (let i = 0; i < arrayLength; i += 1) {
     formattedSeries.push([`Series ${i}`]);
   }
-  for (let i = 0; i < arrayLength; i++) {
-    data[i].map((val) => formattedSeries[i].push(val.y));
+  for (let i = 0; i < arrayLength; i += 1) {
+    data[i].map(val => formattedSeries[i].push(val.y));
   }
-  // debugger;
-  // formattedSeries.push(['x']);
-  // data[0].map((val) => {
-  //   //debugger;
-  //   formattedSeries[data.length].push(val.x);
-  // });
-  // console.log(JSON.stringify(formattedSeries));
 
   return formattedSeries;
 }
 
 function getXAxis(data) {
   const xCategories = [];
-  data[0].map((val) => xCategories.push(val.x));
+  data[0].map(val => xCategories.push(val.x));
   return xCategories;
 }
 

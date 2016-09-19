@@ -12,7 +12,7 @@ const selectControlPanelDomain = () => state => state.get('controlPanel');
 
 const selectControlPanel = () => createSelector(
   selectControlPanelDomain(),
-  (substate) => substate.toJS()
+  substate => substate.toJS()
 );
 
 export {

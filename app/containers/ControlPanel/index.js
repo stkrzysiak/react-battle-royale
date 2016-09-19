@@ -79,8 +79,8 @@ function mapDispatchToProps(dispatch) {
   return {
     onChangeWidth: (evt, val) => dispatch(adjustWidth(val)),
     onChangeHeight: (evt, val) => dispatch(adjustHeight(val)),
-    onDataPointClick: (direction) => dispatch(updateDataPoints(direction)),
-    onSeriesClick: (direction) => dispatch(updateSeriesCount(direction)),
+    onDataPointClick: direction => dispatch(updateDataPoints(direction)),
+    onSeriesClick: direction => dispatch(updateSeriesCount(direction)),
     dispatch,
   };
 }

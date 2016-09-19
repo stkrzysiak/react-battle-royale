@@ -10,7 +10,7 @@ import styles from './styles.css';  // global css var for the gridlines
 function getDatum(data, colors) {
   const datum = [];
   const arrayLength = data.length;
-  for (let i = 0; i < arrayLength; i++) {
+  for (let i = 0; i < arrayLength; i += 1) {
     datum.push({
       values: data[i],
       key: `Series  ${i}`,

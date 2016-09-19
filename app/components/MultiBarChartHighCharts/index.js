@@ -9,10 +9,10 @@ import React from 'react';
 function getDatum(data) {
   const datum = [];
   const arrayLength = data.length;
-  for (let i = 0; i < arrayLength; i++) {
+  for (let i = 0; i < arrayLength; i += 1) {
     datum[i] = datum[i] || [];
     const tmp = [];
-    data[i].map((val) => tmp.push(val.y));
+    data[i].map(val => tmp.push(val.y));
     datum[i] = {
       name: `Series ${i}`,
       data: tmp,
@@ -24,7 +24,7 @@ function getDatum(data) {
 
 function getAxisX(data) {
   const xAxis = [];
-  data.pop().map((val) => xAxis.push(val.x));
+  data.pop().map(val => xAxis.push(val.x));
   return xAxis;
 }
 

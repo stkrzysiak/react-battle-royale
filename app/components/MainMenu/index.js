@@ -9,7 +9,6 @@ import { Tabs, Tab } from 'material-ui/Tabs';
 import { push } from 'react-router-redux';
 import { connect } from 'react-redux';
 
-
 export class MainMenuBase extends React.Component {
   /**
    * Changes the route
@@ -59,7 +58,7 @@ MainMenuBase.propTypes = {
 
 function mapDispatchToProps(dispatch) {
   return {
-    changeRoute: (url) => dispatch(push(url)),
+    changeRoute: url => dispatch(push(url)),
     dispatch,
   };
 }
