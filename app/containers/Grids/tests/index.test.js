@@ -5,7 +5,7 @@ import React from 'react';
 import { GridsBase } from '../index';
 
 describe('<Grids />', () => {
-  it('should render itself', () => {
+  it.skip('should render itself', () => {
     const renderedComponent = shallow(<GridsBase />);
     expect(renderedComponent.contains(GridsBase)).toEqual(true);
   });
