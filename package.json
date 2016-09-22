@@ -197,7 +197,7 @@
     "lint-staged": "3.0.2",
     "minimist": "1.2.0",
     "mocha": "3.0.2",
-    "ngrok": "2.2.2",
+    "ngrok": "2.2.3",
     "node-inspector": "0.12.8",
     "null-loader": "0.1.1",
     "plop": "1.5.0",
