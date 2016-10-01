@@ -5,9 +5,12 @@
 */
 
 import React from 'react';
-import { Tabs, Tab } from 'material-ui/Tabs';
 import { push } from 'react-router-redux';
 import { connect } from 'react-redux';
+import ActionHelp from 'material-ui/svg-icons/action/help';
+import ActionHome from 'material-ui/svg-icons/action/home';
+import ActionViewQuilt from 'material-ui/svg-icons/action/view-quilt';
+import styles from './styles.css';
 
 export class MainMenuBase extends React.Component {
   /**
@@ -40,12 +43,10 @@ export class MainMenuBase extends React.Component {
   };
   render() {
     return (
-      <div>
-        <Tabs>
-          <Tab label="Home" onClick={this.openHomePage} />
-          <Tab label="Components" onClick={this.openComponentsPage} />
-          <Tab label="FAQs" onClick={this.openFaqsPage} />
-        </Tabs>
+      <div className={styles.mainMenu}>
+        <ActionHome onClick={this.openHomePage} />
+        <ActionHelp onClick={this.openFaqsPage} />
+        <ActionViewQuilt onClick={this.openComponentsPage} />
       </div>
     );
   }

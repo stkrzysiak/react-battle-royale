@@ -27,6 +27,7 @@ function App(props) {
         <Header />
         <MainMenu />
         {props.children}
+
         <Footer />
       </div>
     </MuiThemeProvider>

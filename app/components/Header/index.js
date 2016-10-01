@@ -16,9 +16,6 @@ function Header() {
           <section className={`${styles.logo} ${styles.centered}`}>
             React Battle Royale
           </section>
-          <section className={`${styles.textSection} ${styles.centered}`}>
-            <p>A quick way to compare react components side by side</p>
-          </section>
         </div>
       </article>
     </div>

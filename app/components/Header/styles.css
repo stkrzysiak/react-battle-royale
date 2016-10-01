@@ -2,10 +2,6 @@
   /* todo */
 }
 
-.textSection {
-  margin: 3em auto;
-}
-
 .textSection:first-child {
   margin-top: 0;
 }
@@ -15,5 +11,5 @@
 }
 
 .logo {
-  font-size: 2em;
+  font-size: 1.2em;
 }
