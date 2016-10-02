@@ -10,8 +10,8 @@ import { createStructuredSelector } from 'reselect';
 import { Tabs, Tab } from 'material-ui/Tabs';
 import { selectComponentsDemos } from './selectors';
 import Charts from '../Charts';
-import ControlPanel from '../ControlPanel';
-import randomDataSelector from './randomDataSelector';
+import Grids from '../Grids';
+import randomDataSelector, { createRows, createColumns } from './randomDataSelector';
 
 const tabStyles = {
   marginTop: '13px',
@@ -20,15 +20,20 @@ const tabStyles = {
 export class Components extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     const { ui, data } = this.props;
-
+    const rows = createRows(200);
+    const columns = createColumns();
     return (
       <div>
         <Tabs style={tabStyles}>
-          <Tab label="Charts" />
-          <Tab label="Grids" />
+          <Tab label="Charts" >
+            <Charts ui={ui} data={data} />
+          </Tab>
+          <Tab label="Grids" >
+            <Grids rows={rows} columns={columns} />
+          </Tab>
         </Tabs>
-        <ControlPanel />
-        <Charts ui={ui} data={data} />
+
+
       </div>
     );
   }

@@ -1,6 +1,7 @@
 import { createSelector } from 'reselect';
 import moment from 'moment';
 import Chance from 'chance';
+import faker from 'faker';
 
 const chance = new Chance();
 const months = moment.months();
@@ -36,6 +37,57 @@ const selectDataRanges = () => (state) => {
   return { seriesCount, dataPoints };
 };
 
+// via https://github.com/adazzle/react-data-grid/blob/f5656244c18c287aee5c7a14e73d56f11365e7f9/examples/scripts/FakeObjectDataStore.js
+// eslint-disable-next-line
+const createFakeRowObjectData = (index) => {
+  return {
+    id: `id_${index}`,
+    avatar: faker.image.avatar(),
+    email: faker.internet.email(),
+    title: faker.name.prefix(),
+    firstName: faker.name.firstName(),
+    lastName: faker.name.lastName(),
+    catchPhrase: faker.company.catchPhrase(),
+  };
+};
+export const createRows = (numberOfRows) => {
+  const rows = [];
+  for (let i = 0; i < numberOfRows; i += 1) {
+    rows[i] = createFakeRowObjectData(i);
+  }
+  return rows;
+};
+
+// eslint-disable-next-line
+export const createColumns = () => {
+  return [
+
+    {
+      key: 'firstName',
+      name: 'First Name',
+      sortable: false,
+    },
+    {
+      key: 'lastName',
+      name: 'Last Name',
+      sortable: false,
+    },
+    {
+      key: 'email',
+      name: 'Email',
+      sortable: false,
+    },
+    {
+      key: 'tite',
+      name: 'Title',
+      sortable: false,
+    },
+    {
+      key: 'catchPhrase',
+      name: 'Catch Phrase',
+    },
+  ];
+};
 /**
  * Default selector used by ControlPanel
  */

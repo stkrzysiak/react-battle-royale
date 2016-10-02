@@ -12,6 +12,7 @@ import { COLORS } from './constants';
 import MultiBarChartNvd3 from '../../components/MultiBarChartNvd3';
 import MultiBarChartC3 from '../../components/MultiBarChartC3';
 import MultiBarChartHighCharts from '../../components/MultiBarChartHighCharts';
+import ControlPanel from '../ControlPanel';
 
 const colors = COLORS.adriftInDreams;
 
@@ -27,6 +28,7 @@ export class ChartsBase extends React.Component { // eslint-disable-line react/p
 
     return (
       <div>
+        <ControlPanel />
         <Tabs style={tabStyles}>
 
           <Tab label="C3">
