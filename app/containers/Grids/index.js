@@ -4,7 +4,7 @@
  *
  */
 
-import React from 'react';
+import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
 import ReactDataGrid from 'react-data-grid';
 
@@ -29,7 +29,10 @@ export class GridsBase extends React.Component { // eslint-disable-line react/pr
   }
 }
 
-
+GridsBase.propTypes = {
+  rows: PropTypes.array,
+  columns: PropTypes.array,
+};
 function mapDispatchToProps(dispatch) {
   return {
     dispatch,

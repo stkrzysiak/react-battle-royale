@@ -11,7 +11,7 @@ describe('<Footer />', () => {
     );
     expect(renderedComponent.contains(
       <section>
-        <p>Figure out which charting library works best for you.</p>
+        <p>Figure out which react component works best for you.</p>
       </section>
     )).toEqual(true);
   });
