@@ -121,7 +121,7 @@
     "highcharts": "4.2.6",
     "history": "3.2.1",
     "immutable": "3.8.1",
-    "material-ui": "0.15.4",
+    "material-ui": "0.16.0",
     "moment": "2.15.1",
     "node-github": "0.0.3",
     "offline-plugin": "3.4.2",
