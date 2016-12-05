@@ -134,7 +134,7 @@
     "react-highcharts": "10.0.0",
     "react-nvd3": "0.5.7",
     "react-redux": "4.4.5",
-    "react-router": "2.7.0",
+    "react-router": "2.8.1",
     "react-router-redux": "4.0.5",
     "react-router-scroll": "0.2.0",
     "react-tap-event-plugin": "1.0.0",
