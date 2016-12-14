@@ -203,7 +203,7 @@
     "ngrok": "2.2.3",
     "node-inspector": "0.12.8",
     "null-loader": "0.1.1",
-    "plop": "1.7.0",
+    "plop": "1.7.1",
     "postcss-cssnext": "2.8.0",
     "postcss-focus": "1.0.0",
     "postcss-loader": "1.1.1",
