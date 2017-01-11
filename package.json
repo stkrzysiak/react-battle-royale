@@ -133,7 +133,7 @@
     "react-dom": "15.4.2",
     "react-highcharts": "11.5.0",
     "react-nvd3": "0.5.7",
-    "react-redux": "5.0.0",
+    "react-redux": "5.0.2",
     "react-router": "2.7.0",
     "react-router-redux": "4.0.5",
     "react-router-scroll": "0.2.0",
