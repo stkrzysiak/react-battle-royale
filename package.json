@@ -206,7 +206,7 @@
     "plop": "1.7.3",
     "postcss-cssnext": "2.8.0",
     "postcss-focus": "1.0.0",
-    "postcss-loader": "1.2.1",
+    "postcss-loader": "1.2.2",
     "postcss-reporter": "2.0.0",
     "pre-commit": "1.2.2",
     "psi": "2.0.4",
