@@ -213,7 +213,7 @@
     "rimraf": "2.5.4",
     "shelljs": "0.7.6",
     "sinon": "2.0.0-pre",
-    "style-loader": "0.13.1",
+    "style-loader": "0.13.2",
     "stylelint": "7.7.1",
     "stylelint-config-standard": "14.0.0",
     "url-loader": "0.5.7",
