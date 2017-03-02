@@ -183,7 +183,7 @@
     "html-loader": "0.4.3",
     "html-webpack-plugin": "2.26.0",
     "image-webpack-loader": "3.0.0",
-    "imports-loader": "0.7.0",
+    "imports-loader": "0.7.1",
     "ip": "1.1.4",
     "istanbul": "0.4.5",
     "json-loader": "0.5.4",
