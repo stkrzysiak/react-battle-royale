@@ -210,7 +210,7 @@
     "postcss-reporter": "2.0.0",
     "pre-commit": "1.2.2",
     "psi": "2.0.4",
-    "rimraf": "2.5.4",
+    "rimraf": "2.6.0",
     "shelljs": "0.7.6",
     "sinon": "2.0.0-pre",
     "style-loader": "0.13.2",
