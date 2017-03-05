@@ -116,7 +116,7 @@
     "compression": "1.6.2",
     "eslint-plugin-jsx-a11y": "3.0.1",
     "express": "4.15.0",
-    "faker": "3.1.0",
+    "faker": "4.1.0",
     "file-loader": "0.10.1",
     "fontfaceobserver": "2.0.9",
     "highcharts": "5.0.7",
