@@ -215,7 +215,7 @@
     "sinon": "2.0.0-pre",
     "style-loader": "0.13.2",
     "stylelint": "7.9.0",
-    "stylelint-config-standard": "14.0.0",
+    "stylelint-config-standard": "16.0.0",
     "url-loader": "0.5.8",
     "webpack-dev-middleware": "1.10.0",
     "webpack": "2.2.1",
