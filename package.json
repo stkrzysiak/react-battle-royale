@@ -173,7 +173,7 @@
     "eslint-import-resolver-webpack": "0.8.1",
     "eslint-plugin-import": "2.2.0",
     "eslint-plugin-jsx-a11y": "3.0.0",
-    "eslint-plugin-react": "6.10.0",
+    "eslint-plugin-react": "6.10.3",
     "eventsource-polyfill": "0.9.6",
     "expect": "1.20.2",
     "expect-jsx": "3.0.0",
