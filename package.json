@@ -150,7 +150,7 @@
     "babel-cli": "6.24.0",
     "babel-eslint": "7.1.1",
     "babel-loader": "6.4.1",
-    "babel-plugin-istanbul": "4.0.0",
+    "babel-plugin-istanbul": "4.1.1",
     "babel-plugin-react-intl": "2.3.0",
     "babel-plugin-react-transform": "2.0.2",
     "babel-plugin-transform-react-constant-elements": "6.23.0",
