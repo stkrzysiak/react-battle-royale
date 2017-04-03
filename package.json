@@ -167,7 +167,7 @@
     "cross-env": "4.0.0",
     "coveralls": "2.13.0",
     "enzyme": "2.8.0",
-    "css-loader": "0.27.3",
+    "css-loader": "0.28.0",
     "enzyme": "2.8.0",
     "eslint": "3.19.0",
     "eslint-config-airbnb": "14.1.0",
