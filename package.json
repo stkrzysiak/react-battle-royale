@@ -147,7 +147,7 @@
   },
   "devDependencies": {
     "babel-core": "6.24.0",
-    "babel-cli": "6.24.0",
+    "babel-cli": "6.24.1",
     "babel-eslint": "7.2.1",
     "babel-loader": "6.4.1",
     "babel-plugin-istanbul": "4.1.1",
