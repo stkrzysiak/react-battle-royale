@@ -1,12 +1,5 @@
 require('shelljs/global');
-
-/**
- * Adds mark check symbol
- */
-function addCheckMark(callback) {
-  process.stdout.write(' ✓');
-  callback();
-}
+const addCheckMark = require('./helpers/checkmark.js');
 
 if (!which('git')) {
   echo('Sorry, this script requires git');
@@ -20,46 +13,41 @@ if (!test('-e', 'internals/templates')) {
 
 process.stdout.write('Cleanup started...');
 
-// Cleanup components folder
+// Reuse existing LanguageProvider and i18n tests
+mv('app/containers/LanguageProvider/tests', 'internals/templates/containers/LanguageProvider');
+cp('app/tests/i18n.test.js', 'internals/templates/tests/i18n.test.js');
+
+// Cleanup components/
 rm('-rf', 'app/components/*');
 
-// Cleanup containers folder
-rm('-rf', 'app/containers/*');
-mkdir('app/containers/App');
-mkdir('app/containers/NotFoundPage');
-mkdir('app/containers/HomePage');
-cp('internals/templates/appContainer.js', 'app/containers/App/index.js');
-cp('internals/templates/notFoundPage.js', 'app/containers/NotFoundPage/index.js');
-cp('internals/templates/homePage.js', 'app/containers/HomePage/index.js');
+// Handle containers/
+rm('-rf', 'app/containers');
+mv('internals/templates/containers', 'app');
 
-// Copy selectors
-mkdir('app/containers/App/tests');
-cp('internals/templates/selectors.js',
-  'app/containers/App/selectors.js');
-cp('internals/templates/selectors.test.js',
-  'app/containers/App/tests/selectors.test.js');
+// Handle tests/
+mv('internals/templates/tests', 'app');
 
-// Utils
+// Handle translations/
+rm('-rf', 'app/translations')
+mv('internals/templates/translations', 'app');
+
+// Handle utils/
 rm('-rf', 'app/utils');
-mkdir('app/utils');
-mkdir('app/utils/tests');
-cp('internals/templates/hooks.js',
-  'app/utils/hooks.js');
-cp('internals/templates/hooks.test.js',
-  'app/utils/tests/hooks.test.js');
+mv('internals/templates/utils', 'app')
 
 // Replace the files in the root app/ folder
 cp('internals/templates/app.js', 'app/app.js');
+cp('internals/templates/global-styles.js', 'app/global-styles.js');
+cp('internals/templates/i18n.js', 'app/i18n.js');
 cp('internals/templates/index.html', 'app/index.html');
 cp('internals/templates/reducers.js', 'app/reducers.js');
 cp('internals/templates/routes.js', 'app/routes.js');
 cp('internals/templates/store.js', 'app/store.js');
-cp('internals/templates/store.test.js', 'app/store.test.js');
 
 // Remove the templates folder
 rm('-rf', 'internals/templates');
 
-process.stdout.write(' ✓');
+addCheckMark();
 
 // Commit the changes
 if (exec('git add . --all && git commit -qm "Remove default example"').code !== 0) {
