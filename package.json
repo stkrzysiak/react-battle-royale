@@ -202,7 +202,7 @@
     "minimist": "1.2.0",
     "mocha": "3.1.2",
     "ngrok": "2.2.6",
-    "node-inspector": "1.0.0",
+    "node-inspector": "1.0.1",
     "null-loader": "0.1.1",
     "plop": "1.7.4",
     "postcss-cssnext": "2.10.0",
