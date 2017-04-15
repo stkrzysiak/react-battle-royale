@@ -15,7 +15,7 @@ export class GridsBase extends React.Component { // eslint-disable-line react/pr
   render() {
 
     const { rows, columns } = this.props;
-    const rowGetter = i => rows[i];
+    const rowGetter = (i) => rows[i];
     return (
       <div>
         <ReactDataGrid
