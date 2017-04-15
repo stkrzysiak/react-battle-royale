@@ -4,7 +4,8 @@
  *
  */
 
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import ReactDataGrid from 'react-data-grid';
 
@@ -14,7 +15,7 @@ export class GridsBase extends React.Component { // eslint-disable-line react/pr
   render() {
 
     const { rows, columns } = this.props;
-    const rowGetter = i => rows[i];
+    const rowGetter = (i) => rows[i];
     return (
       <div>
         <ReactDataGrid

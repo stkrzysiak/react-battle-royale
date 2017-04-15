@@ -5,12 +5,23 @@
 */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import { push } from 'react-router-redux';
 import { connect } from 'react-redux';
 import ActionHelp from 'material-ui/svg-icons/action/help';
 import ActionHome from 'material-ui/svg-icons/action/home';
 import ActionViewQuilt from 'material-ui/svg-icons/action/view-quilt';
-import styles from './styles.css';
+import styled from 'styled-components';
+
+const MainMenuWrapper = styled.div`
+  margin: 20px 0;
+  display: flex;
+`;
+const SVGWrapper = styled.svg`
+  flex-grow: 1;
+  height:50px;
+  width:50px;
+`;
 
 export class MainMenuBase extends React.Component {
   /**
@@ -43,23 +54,29 @@ export class MainMenuBase extends React.Component {
   };
   render() {
     return (
-      <div className={styles.mainMenu}>
-        <ActionHome onClick={this.openHomePage} />
-        <ActionHelp onClick={this.openFaqsPage} />
-        <ActionViewQuilt onClick={this.openComponentsPage} />
-      </div>
+      <MainMenuWrapper>
+        <SVGWrapper>
+          <ActionHome onClick={this.openHomePage} />
+        </SVGWrapper>
+        <SVGWrapper>
+          <ActionHelp onClick={this.openFaqsPage} />
+        </SVGWrapper>
+        <SVGWrapper>
+          <ActionViewQuilt onClick={this.openComponentsPage} />
+        </SVGWrapper>
+      </MainMenuWrapper>
     );
   }
 }
 
 MainMenuBase.propTypes = {
-  changeRoute: React.PropTypes.func,
+  changeRoute: PropTypes.func,
 
 };
 
 function mapDispatchToProps(dispatch) {
   return {
-    changeRoute: url => dispatch(push(url)),
+    changeRoute: (url) => dispatch(push(url)),
     dispatch,
   };
 }

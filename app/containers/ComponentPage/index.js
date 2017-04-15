@@ -5,6 +5,7 @@
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { Tabs, Tab } from 'material-ui/Tabs';
@@ -45,11 +46,11 @@ const mapStateToProps = createStructuredSelector({
 });
 
 Components.propTypes = {
-  ui: React.PropTypes.shape({
-    width: React.PropTypes.number,
-    height: React.PropTypes.number,
+  ui: PropTypes.shape({
+    width: PropTypes.number,
+    height: PropTypes.number,
   }),
-  data: React.PropTypes.array,
+  data: PropTypes.array,
 };
 
 export default connect(mapStateToProps)(Components);

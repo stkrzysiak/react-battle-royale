@@ -6,16 +6,20 @@
 
 import React from 'react';
 
-import styles from './styles.css';
+import styled from 'styled-components';
 
+const LogoWrapper = styled.section`
+  font-size: 1.2em;
+  text-align: center;
+`;
 function Header() {
   return (
     <div className={'header'}>
       <article>
         <div>
-          <section className={`${styles.logo} ${styles.centered}`}>
+          <LogoWrapper>
             React Battle Royale
-          </section>
+          </LogoWrapper>
         </div>
       </article>
     </div>
