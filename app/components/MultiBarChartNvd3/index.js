@@ -3,6 +3,7 @@
  */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import NVD3Chart from 'react-nvd3';
 // eslint-disable-next-line
 import styles from './styles.css';  // global css var for the gridlines
@@ -42,10 +43,10 @@ const MultiBarChartNvd3 = ({ data, colors, width, height }) => {
 };
 
 MultiBarChartNvd3.propTypes = {
-  height: React.PropTypes.number,
-  width: React.PropTypes.number,
-  colors: React.PropTypes.array,
-  data: React.PropTypes.array,
+  height: PropTypes.number,
+  width: PropTypes.number,
+  colors: PropTypes.array,
+  data: PropTypes.array,
 };
 
 export default MultiBarChartNvd3;

@@ -1,17 +1,21 @@
 import React from 'react';
+import styled from 'styled-components';
 
-import styles from './styles.css';
-
+const FooterWrapper = styled.div`
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px dotted #666;
+`;
 function Footer() {
   return (
-    <footer className={styles.footer}>
+    <FooterWrapper>
       <section>
         <p>Figure out which react component works best for you.</p>
       </section>
       <section>
         <p>Created by Steve Krzysiak</p>
       </section>
-    </footer>
+    </FooterWrapper>
   );
 }
 
