@@ -12,8 +12,8 @@ import App from 'containers/App';
 
 // TODO constrain eslint import/no-unresolved rule to this block
 // Load the manifest.json file and the .htaccess file
-import 'file?name=[name].[ext]!./manifest.json';  // eslint-disable-line import/no-unresolved
-import 'file?name=[name].[ext]!./.htaccess';      // eslint-disable-line import/extensions
+import 'file-loader?name=[name].[ext]!./manifest.json';  // eslint-disable-line import/no-unresolved
+import 'file-loader?name=[name].[ext]!./.htaccess';      // eslint-disable-line import/extensions
 
 // Import all the third party stuff
 import React from 'react';
@@ -21,7 +21,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { applyRouterMiddleware, Router, browserHistory } from 'react-router';
 import { syncHistoryWithStore } from 'react-router-redux';
-import useScroll from 'react-router-scroll';
+import useScroll from 'react-router-scroll/lib/useScroll';
 import configureStore from './store';
 import createRoutes from './routes';
 
