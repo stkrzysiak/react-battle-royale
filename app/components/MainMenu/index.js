@@ -75,7 +75,7 @@ MainMenuBase.propTypes = {
 
 function mapDispatchToProps(dispatch) {
   return {
-    changeRoute: url => dispatch(push(url)),
+    changeRoute: (url) => dispatch(push(url)),
     dispatch,
   };
 }
