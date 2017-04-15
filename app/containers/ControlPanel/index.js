@@ -10,9 +10,9 @@ import Slider from 'material-ui/Slider';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 import ContentRemove from 'material-ui/svg-icons/content/remove';
 import React from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { selectControlPanel } from './selectors';
-import styles from './styles.css';
 
 import {
   adjustWidth,
@@ -76,7 +76,6 @@ export class ControlPanelBase extends React.Component { // eslint-disable-line r
           <SingleSlider>
             <p>Width: width</p>
             <Slider
-              className={styles.slider}
               defaultValue={width}
               max={1200}
               min={200}
@@ -87,7 +86,6 @@ export class ControlPanelBase extends React.Component { // eslint-disable-line r
           <SingleSlider>
             <p>Height: {height}</p>
             <Slider
-              className={styles.slider}
               defaultValue={height}
               max={1200}
               min={200}
@@ -115,14 +113,14 @@ function mapDispatchToProps(dispatch) {
 
 
 ControlPanelBase.propTypes = {
-  width: React.PropTypes.number,
-  height: React.PropTypes.number,
-  dataPoints: React.PropTypes.number,
-  seriesCount: React.PropTypes.number,
-  onChangeWidth: React.PropTypes.func,
-  onChangeHeight: React.PropTypes.func,
-  onDataPointClick: React.PropTypes.func,
-  onSeriesClick: React.PropTypes.func,
+  width: PropTypes.number,
+  height: PropTypes.number,
+  dataPoints: PropTypes.number,
+  seriesCount: PropTypes.number,
+  onChangeWidth: PropTypes.func,
+  onChangeHeight: PropTypes.func,
+  onDataPointClick: PropTypes.func,
+  onSeriesClick: PropTypes.func,
 
 };
 export default connect(mapStateToProps, mapDispatchToProps)(ControlPanelBase);

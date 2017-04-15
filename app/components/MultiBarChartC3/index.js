@@ -8,7 +8,7 @@
  */
 
 import React from 'react';
-
+import PropTypes from 'prop-types';
 import Chart from 'react-c3-component';
 import 'c3/c3.css';
 
@@ -65,10 +65,10 @@ const MultiBarChartC3 = ({ data, colors, width, height }) =>
 
 
 MultiBarChartC3.propTypes = {
-  height: React.PropTypes.number,
-  width: React.PropTypes.number,
-  colors: React.PropTypes.array,
-  data: React.PropTypes.array,
+  height: PropTypes.number,
+  width: PropTypes.number,
+  colors: PropTypes.array,
+  data: PropTypes.array,
 };
 
 export default MultiBarChartC3;

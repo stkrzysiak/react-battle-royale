@@ -5,6 +5,7 @@
 */
 
 import React from 'react';
+import PropTypes from 'prop-types';
 import { push } from 'react-router-redux';
 import { connect } from 'react-redux';
 import ActionHelp from 'material-ui/svg-icons/action/help';
@@ -69,7 +70,7 @@ export class MainMenuBase extends React.Component {
 }
 
 MainMenuBase.propTypes = {
-  changeRoute: React.PropTypes.func,
+  changeRoute: PropTypes.func,
 
 };
 

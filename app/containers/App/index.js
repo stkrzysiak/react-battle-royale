@@ -8,6 +8,7 @@
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 import React from 'react';
+import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 // Import the CSS reset, which HtmlWebpackPlugin transfers to the build folder
@@ -50,7 +51,7 @@ export function App(props) {
 }
 
 App.propTypes = {
-  children: React.PropTypes.node,
+  children: PropTypes.node,
 };
 
 export default App;

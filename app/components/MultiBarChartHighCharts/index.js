@@ -5,6 +5,7 @@
 */
 import ReactHighcharts from 'react-highcharts';
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function getDatum(data) {
   const datum = [];
@@ -12,7 +13,7 @@ function getDatum(data) {
   for (let i = 0; i < arrayLength; i += 1) {
     datum[i] = datum[i] || [];
     const tmp = [];
-    data[i].map(val => tmp.push(val.y));
+    data[i].map((val) => tmp.push(val.y));
     datum[i] = {
       name: `Series ${i}`,
       data: tmp,
@@ -24,7 +25,7 @@ function getDatum(data) {
 
 function getAxisX(data) {
   const xAxis = [];
-  data.pop().map(val => xAxis.push(val.x));
+  data.pop().map((val) => xAxis.push(val.x));
   return xAxis;
 }
 
@@ -50,10 +51,10 @@ const MultiBarChartHighCharts = ({ data, colors, width, height }) => {
 };
 
 MultiBarChartHighCharts.propTypes = {
-  height: React.PropTypes.number,
-  width: React.PropTypes.number,
-  colors: React.PropTypes.array,
-  data: React.PropTypes.array,
+  height: PropTypes.number,
+  width: PropTypes.number,
+  colors: PropTypes.array,
+  data: PropTypes.array,
 };
 
 export default MultiBarChartHighCharts;
