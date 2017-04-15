@@ -304,7 +304,7 @@
     "sinon": "2.1.0",
     "style-loader": "0.16.1",
     "url-loader": "0.5.7",
-    "webpack": "2.2.1",
+    "webpack": "2.3.3",
     "webpack-dev-middleware": "1.10.1",
     "webpack-hot-middleware": "2.18.0"
   }
