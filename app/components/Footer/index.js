@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import LocaleToggle from 'containers/LocaleToggle';
 
 const FooterWrapper = styled.div`
   display: flex;
@@ -14,6 +15,9 @@ function Footer() {
       </section>
       <section>
         <p>Created by Steve Krzysiak</p>
+      </section>
+      <section>
+        <LocaleToggle />
       </section>
     </FooterWrapper>
   );
