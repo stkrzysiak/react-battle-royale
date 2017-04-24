@@ -248,7 +248,7 @@
     "react-tap-event-plugin": "2.0.1",
     "redux": "3.6.0",
     "redux-immutable": "3.0.11",
-    "redux-saga": "0.14.7",
+    "redux-saga": "0.14.8",
     "reselect": "2.5.4",
     "sanitize.css": "4.1.0",
     "styled-components": "1.4.3",
