@@ -275,7 +275,7 @@
     "circular-dependency-plugin": "3.0.0",
     "coveralls": "2.13.1",
     "cross-env": "4.0.0",
-    "css-loader": "0.28.0",
+    "css-loader": "0.28.1",
     "enzyme": "2.8.2",
     "eslint": "3.19.0",
     "eslint-config-airbnb": "14.1.0",
