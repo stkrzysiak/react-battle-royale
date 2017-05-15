@@ -1,5 +1,7 @@
 # React Battle Royale
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/stkrzysiak/react-battle-royale.svg)](https://greenkeeper.io/)
+
 ###An epic showdown of react components.
 
 ## Why
