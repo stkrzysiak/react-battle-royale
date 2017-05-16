@@ -31,7 +31,7 @@ const style = {
 };
 
 
-const MultiBarChartVictory = ({ data, colors, width, height }) =>
+const MultiBarChartVictory = ({ data, width, height }) =>
    (
      <VictoryChart
        style={style}
@@ -43,18 +43,18 @@ const MultiBarChartVictory = ({ data, colors, width, height }) =>
          target: 'data',
        }]}
      >
-     <VictoryBar name="bar"
-       style={{ data: { width: 35, fill: "blue" } }}
-       data={getDatum(data)}
-     />
-   </VictoryChart>
+       <VictoryBar
+         name="bar"
+         style={{ data: { width: 35, fill: 'blue' } }}
+         data={getDatum(data)}
+       />
+     </VictoryChart>
   );
 
 
 MultiBarChartVictory.propTypes = {
   height: PropTypes.number,
   width: PropTypes.number,
-  colors: PropTypes.array,
   data: PropTypes.array,
 };
 
