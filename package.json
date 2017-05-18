@@ -298,7 +298,7 @@
     "lint-staged": "3.4.2",
     "node-plop": "0.6.0",
     "null-loader": "0.1.1",
-    "offline-plugin": "4.7.0",
+    "offline-plugin": "4.8.0",
     "plop": "1.7.4",
     "pre-commit": "1.2.2",
     "react-addons-test-utils": "15.5.1",
