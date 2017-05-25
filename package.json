@@ -252,7 +252,7 @@
     "reselect": "3.0.1",
     "sanitize.css": "5.0.0",
     "styled-components": "1.4.6",
-    "victory": "0.19.1",
+    "victory": "0.20.0",
     "warning": "3.0.0",
     "whatwg-fetch": "2.0.3"
   },
