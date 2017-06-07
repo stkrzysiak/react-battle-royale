@@ -257,7 +257,7 @@
     "victory": "0.20.0",
     "warning": "3.0.0",
     "whatwg-fetch": "2.0.3",
-    "snyk": "^1.32.0"
+    "snyk": "^1.34.3"
   },
   "devDependencies": {
     "babel-cli": "6.24.1",
