@@ -278,7 +278,7 @@
     "cheerio": "0.22.0",
     "circular-dependency-plugin": "3.0.0",
     "coveralls": "2.13.1",
-    "cross-env": "5.0.0",
+    "cross-env": "5.0.1",
     "css-loader": "0.28.4",
     "enzyme": "2.8.2",
     "eslint": "3.19.0",
