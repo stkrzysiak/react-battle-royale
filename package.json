@@ -1,16 +1,16 @@
 {
-  "name": "react-boilerplate",
+  "name": "react-battle-royale",
   "version": "3.4.0",
   "description": "A highly scalable, offline-first foundation with the best DX and a focus on performance and best practices",
   "repository": {
     "type": "git",
-    "url": "git://github.com/react-boilerplate/react-boilerplate.git"
+    "url": "git://github.com/stkrzysiak/react-battle-royale.git"
   },
   "engines": {
     "npm": ">=3",
     "node": ">=5"
   },
-  "author": "Max Stoiber",
+  "author": "Steve Krzysiak",
   "license": "MIT",
   "scripts": {
     "analyze:clean": "rimraf stats.json",
@@ -285,7 +285,7 @@
     "eslint-config-airbnb-base": "11.2.0",
     "eslint-config-airbnb": "15.0.1",
     "eslint-import-resolver-webpack": "0.8.1",
-    "eslint-plugin-import": "2.4.0",
+    "eslint-plugin-import": "2.3.0",
     "eslint-plugin-jsx-a11y": "5.0.3",
     "eslint-plugin-react": "7.0.1",
     "eslint-plugin-redux-saga": "0.3.0",
