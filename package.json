@@ -311,7 +311,7 @@
     "sinon": "2.3.5",
     "url-loader": "0.5.8",
     "webpack": "2.2.1",
-    "webpack-dev-middleware": "1.10.2",
+    "webpack-dev-middleware": "1.11.0",
     "webpack-hot-middleware": "2.18.0",
     "why-did-you-update": "0.0.8"
   },
