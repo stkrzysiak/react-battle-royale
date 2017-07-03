@@ -312,7 +312,7 @@
     "url-loader": "0.5.8",
     "webpack": "2.2.1",
     "webpack-dev-middleware": "1.11.0",
-    "webpack-hot-middleware": "2.18.0",
+    "webpack-hot-middleware": "2.18.1",
     "why-did-you-update": "0.0.8"
   },
   "snyk": true
