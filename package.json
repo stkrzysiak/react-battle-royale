@@ -216,7 +216,7 @@
     "c3": "0.4.12",
     "chalk": "2.0.0",
     "chance": "1.0.10",
-    "compression": "1.6.2",
+    "compression": "1.7.0",
     "cross-env": "5.0.0",
     "express": "4.15.3",
     "faker": "4.1.0",
