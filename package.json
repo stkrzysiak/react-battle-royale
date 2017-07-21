@@ -281,7 +281,7 @@
     "cross-env": "5.0.1",
     "css-loader": "0.28.4",
     "enzyme": "2.9.0",
-    "eslint": "4.2.0",
+    "eslint": "4.3.0",
     "eslint-config-airbnb-base": "11.2.0",
     "eslint-config-airbnb": "15.0.2",
     "eslint-plugin-redux-saga": "0.4.0",
