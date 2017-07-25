@@ -254,7 +254,7 @@
     "reselect": "3.0.1",
     "sanitize.css": "5.0.0",
     "styled-components": "2.1.1",
-    "victory": "0.21.2",
+    "victory": "0.21.3",
     "warning": "3.0.0",
     "whatwg-fetch": "2.0.3",
     "snyk": "^1.32.0"
@@ -283,7 +283,7 @@
     "enzyme": "2.9.0",
     "eslint": "4.2.0",
     "eslint-config-airbnb-base": "11.3.0",
-    "eslint-config-airbnb": "15.0.2",
+    "eslint-config-airbnb": "15.1.0",
     "eslint-plugin-redux-saga": "0.4.0",
     "eslint-import-resolver-webpack": "0.8.2",
     "eslint-plugin-jsx-a11y": "6.0.1",
