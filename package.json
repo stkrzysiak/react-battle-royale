@@ -282,7 +282,7 @@
     "css-loader": "0.28.4",
     "enzyme": "2.9.0",
     "eslint": "4.2.0",
-    "eslint-config-airbnb-base": "11.2.0",
+    "eslint-config-airbnb-base": "11.3.0",
     "eslint-config-airbnb": "15.1.0",
     "eslint-plugin-redux-saga": "0.4.0",
     "eslint-import-resolver-webpack": "0.8.2",
