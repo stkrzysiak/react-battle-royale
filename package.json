@@ -212,7 +212,7 @@
     "testRegex": "tests/.*\\.test\\.js$"
   },
   "dependencies": {
-    "babel-polyfill": "6.23.0",
+    "babel-polyfill": "6.26.0",
     "c3": "0.4.13",
     "chalk": "2.1.0",
     "chance": "1.0.10",
