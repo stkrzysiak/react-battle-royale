@@ -213,7 +213,7 @@
   },
   "dependencies": {
     "babel-polyfill": "6.23.0",
-    "c3": "0.4.13",
+    "c3": "0.4.16",
     "chalk": "2.1.0",
     "chance": "1.0.10",
     "compression": "1.7.0",
