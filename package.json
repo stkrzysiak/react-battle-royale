@@ -299,7 +299,7 @@
     "jest-cli": "20.0.4",
     "ngrok": "2.2.16",
     "lint-staged": "4.0.3",
-    "node-plop": "0.6.0",
+    "node-plop": "0.7.1",
     "null-loader": "0.1.1",
     "offline-plugin": "4.8.0",
     "plop": "1.7.4",
