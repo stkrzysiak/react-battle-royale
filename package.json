@@ -229,7 +229,7 @@
     "invariant": "2.2.2",
     "ip": "1.1.5",
     "lodash": "4.17.4",
-    "material-ui": "0.19.2",
+    "material-ui": "0.19.3",
     "minimist": "1.2.0",
     "moment": "2.19.0",
     "node-github": "0.0.3",
