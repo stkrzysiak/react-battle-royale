@@ -313,7 +313,7 @@
     "webpack": "2.2.1",
     "webpack-dev-middleware": "1.11.0",
     "webpack-hot-middleware": "2.18.0",
-    "why-did-you-update": "0.1.0"
+    "why-did-you-update": "0.1.1"
   },
   "snyk": true
 }
