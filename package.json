@@ -224,7 +224,7 @@
     "fontfaceobserver": "2.0.12",
     "highcharts": "6.0.0",
     "history": "3.3.0",
-    "immutable": "3.8.1",
+    "immutable": "4.0.0-rc.4",
     "intl": "1.2.5",
     "invariant": "2.2.2",
     "ip": "1.1.5",
