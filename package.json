@@ -304,7 +304,7 @@
     "offline-plugin": "4.8.0",
     "plop": "1.9.0",
     "pre-commit": "1.2.2",
-    "react-addons-test-utils": "15.6.0",
+    "react-addons-test-utils": "15.6.2",
     "rimraf": "2.6.2",
     "shelljs": "0.7.8",
     "sinon": "4.0.0",
