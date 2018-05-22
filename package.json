@@ -255,7 +255,7 @@
     "sanitize.css": "5.0.0",
     "styled-components": "2.1.2",
     "victory": "0.23.0",
-    "warning": "3.0.0",
+    "warning": "4.0.0",
     "whatwg-fetch": "2.0.3",
     "snyk": "^1.32.0"
   },
