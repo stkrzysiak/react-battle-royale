@@ -294,7 +294,7 @@
     "file-loader": "0.11.2",
     "html-loader": "0.5.0",
     "html-webpack-plugin": "2.29.0",
-    "image-webpack-loader": "3.4.1",
+    "image-webpack-loader": "4.3.0",
     "imports-loader": "0.7.1",
     "jest-cli": "20.0.4",
     "node-plop": "0.9.0",
