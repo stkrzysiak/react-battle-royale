@@ -252,7 +252,7 @@
     "redux-immutable": "4.0.0",
     "redux-saga": "0.15.4",
     "reselect": "3.0.1",
-    "sanitize.css": "5.0.0",
+    "sanitize.css": "7.0.3",
     "styled-components": "2.1.2",
     "victory": "0.23.0",
     "warning": "3.0.0",
