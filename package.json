@@ -238,7 +238,7 @@
     "react": "16.7.0",
     "react-c3-component": "1.3.5",
     "react-data-grid": "2.0.61",
-    "react-dom": "15.5.4",
+    "react-dom": "16.7.0",
     "react-helmet": "5.2.0",
     "react-highcharts": "12.0.0",
     "react-intl": "2.3.0",
