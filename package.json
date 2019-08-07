@@ -236,7 +236,7 @@
     "prop-types": "15.6.0",
     "offline-plugin": "4.8.5",
     "react": "15.5.4",
-    "react-c3-component": "1.3.5",
+    "react-c3-component": "2.0.0",
     "react-data-grid": "2.0.61",
     "react-dom": "15.5.4",
     "react-helmet": "5.2.0",
