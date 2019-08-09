@@ -276,7 +276,7 @@
     "babel-preset-react-hmre": "1.1.1",
     "babel-preset-stage-0": "6.24.1",
     "cheerio": "0.22.0",
-    "circular-dependency-plugin": "4.3.0",
+    "circular-dependency-plugin": "5.1.0",
     "coveralls": "2.13.1",
     "cross-env": "5.0.1",
     "css-loader": "0.28.4",
