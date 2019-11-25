@@ -220,7 +220,7 @@
     "cross-env": "5.1.0",
     "express": "4.15.3",
     "faker": "4.1.0",
-    "file-loader": "1.0.0-rc.0",
+    "file-loader": "5.0.0",
     "fontfaceobserver": "2.0.12",
     "highcharts": "6.0.0",
     "history": "3.3.0",
