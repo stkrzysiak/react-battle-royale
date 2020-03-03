@@ -222,7 +222,7 @@
     "faker": "4.1.0",
     "file-loader": "1.0.0-rc.0",
     "fontfaceobserver": "2.0.12",
-    "highcharts": "6.0.0",
+    "highcharts": "8.0.2",
     "history": "3.3.0",
     "immutable": "3.8.1",
     "intl": "1.2.5",
