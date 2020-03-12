@@ -230,7 +230,7 @@
     "ip": "1.1.5",
     "lodash": "4.17.4",
     "material-ui": "0.20.0",
-    "minimist": "1.2.0",
+    "minimist": "1.2.5",
     "moment": "2.19.3",
     "node-github": "0.0.3",
     "prop-types": "15.6.0",
