@@ -44,7 +44,7 @@
     "test:watch": "cross-env NODE_ENV=test jest --watchAll",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "snyk-protect": "snyk protect",
-    "prepublish": "npm run snyk-protect"
+    "prepublish": "yarn run snyk-protect"
   },
   "lint-staged": {
     "*.js": "lint:eslint"
@@ -257,7 +257,7 @@
     "victory": "0.23.0",
     "warning": "3.0.0",
     "whatwg-fetch": "2.0.3",
-    "snyk": "^1.32.0"
+    "snyk": "^1.316.2"
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
