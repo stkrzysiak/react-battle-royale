@@ -231,7 +231,7 @@
     "lodash": "4.17.4",
     "material-ui": "0.20.0",
     "minimist": "1.2.0",
-    "moment": "2.19.3",
+    "moment": "2.29.4",
     "node-github": "0.0.3",
     "prop-types": "15.6.0",
     "offline-plugin": "4.8.5",
